@@ -16,7 +16,7 @@ if st.button('GENERATE PROMPT 🐯'):
 
     st.subheader("Here are some prompts for you to use🐧")
     for i in range(len(result)):
-        st.text(result[i].replace("-", str(i+1)))
+        st.code(result[i].replace("- ", ""), language='markdown')
 
 st.divider()
 
